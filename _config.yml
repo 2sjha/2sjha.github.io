@@ -1,7 +1,7 @@
 # Site settings
 title: Shubham Shekhar Jha # site title
 description: >- # site description
-  I am a CS grad student at UT Dallas.
+  Personal Website of Shubham Shekhar Jha
 lang: en-US # default lang
 timezone: America/Chicago # set your timezone
 image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
@@ -11,8 +11,7 @@ mode: dark # default theme "dark" | "light"
 # Profile settings
 author:
   name: Shubham Shekhar Jha # author name
-  bio: >- # tell to the world
-    I'm a CS grad student at UT Dallas.
+  bio: Hello. Hi. Hola.
   username: 2sjha # general username
   github: 2sjha # github username
   email: jhashubhamshekhar@gmail.com # email adress
@@ -55,7 +54,7 @@ jekyll_compose:
     tags: []
     description:
 
-# Homepage limit posts
+# Blog Page mit posts
 number_of_posts: 5
 
 # Build settings
