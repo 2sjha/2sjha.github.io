@@ -1,0 +1,13 @@
+---
+title: About
+permalink: /about/
+layout: page
+excerpt: 
+comments: false
+---
+
+
+Hi
+
+- [{{ site.author.email }}](mailto:{{ site.author.email }})
+- [github.com/{{ site.author.github }}](https://www.github.com/{{ site.author.github }})

@@ -1,0 +1,80 @@
+# Site settings
+title: Shubham Shekhar Jha # site title
+description: >- # site description
+  I am a CS grad student at UT Dallas.
+lang: en-US # default lang
+timezone: America/Chicago # set your timezone
+image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
+repo: https://github.com/2sjha/2sjha.github.io # site repo [optional]
+mode: dark # default theme "dark" | "light"
+
+# Profile settings
+author:
+  name: Shubham Shekhar Jha # author name
+  bio: >- # tell to the world
+    I'm a CS grad student at UT Dallas.
+  username: 2sjha # general username
+  github: 2sjha # github username
+  email: jhashubhamshekhar@gmail.com # email adress
+  avatar: /assets/img/avatar.jpg # change with your own avatar
+
+# URL settings
+url: "https://2sjha.github.io" #
+baseurl:
+permalink: /:title/
+google_analytics: # leave it blank if you dont want this
+fb_appid:
+
+# Collection setting
+collections:
+  posts:
+    output: true
+
+# Markdown settings
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  syntax_highlighter: rouge
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: post
+      comments: false
+
+# Jekyll Compose default front matter
+jekyll_compose:
+  post_default_front_matter:
+    modified:
+    tags: []
+    description:
+  draft_default_front_matter:
+    modified:
+    tags: []
+    description:
+
+# Homepage limit posts
+number_of_posts: 5
+
+# Build settings
+# theme: klise
+sass:
+  style: compressed
+
+include:
+  - _redirects
+  - .htaccess
+
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
