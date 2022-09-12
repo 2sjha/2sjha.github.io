@@ -15,8 +15,11 @@
     }
   };
 
-  lamp.addEventListener("click", () =>
-    toggleTheme(localStorage.getItem("theme"))
+  lamp.addEventListener("click", () => {
+      let theme = localStorage.getItem('theme');
+      theme = theme || (window.matchMedia ? window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light' : 'light');
+      toggleTheme(theme);
+    }
   );
 
   // Blur the content when the menu is open
