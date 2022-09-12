@@ -74,6 +74,8 @@ exclude:
   - README.md
   - node_modules
 
+exclude: [vendor]
+
 # Plugins
 plugins:
   - jekyll-feed
