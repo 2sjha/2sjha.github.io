@@ -27,16 +27,20 @@
     transform: scale(1, 1);
     opacity: 0.7;
     z-index: 1;
+
     &:hover {
       cursor: pointer;
       opacity: 1;
     }
+
     &:active {
       -webkit-transform: scale(0.9, 0.9);
       transform: scale(0.9, 0.9);
     }
+
     .mode-moon {
       display: block;
+
       line {
         stroke: $black;
         fill: none;
@@ -47,12 +51,15 @@
         stroke: $black;
       }
     }
+
     .mode-sunny {
       display: none;
+
       line {
         stroke: $dark-white;
         fill: none;
       }
+
       circle {
         fill: none;
         stroke: $dark-white;
@@ -132,27 +139,30 @@
       cursor: pointer;
       text-align: center;
       z-index: 1;
-      > svg {
+
+      >svg {
         fill: $black;
         opacity: 0.7;
       }
+
       &:hover {
-        > svg {
+        >svg {
           opacity: 1;
         }
       }
+
       &:active {
         -webkit-transform: scale(0.9, 0.9);
         transform: scale(0.9, 0.9);
       }
     }
 
-    input[type="checkbox"]:not(:checked) ~ .trigger {
+    input[type="checkbox"]:not(:checked)~.trigger {
       clear: both;
       visibility: hidden;
     }
 
-    input[type="checkbox"]:checked ~ .trigger {
+    input[type="checkbox"]:checked~.trigger {
       position: fixed;
       animation: 0.2s ease-in forwards fadein;
       -webkit-animation: 0.2s ease-in forwards fadein;
@@ -192,8 +202,6 @@
   .author-avatar {
     width: 200px;
     height: 200px;
-    position: relative;
-    right: 25%;
     border-radius: 100%;
     user-select: none;
     background-color: $black;
@@ -202,24 +210,37 @@
     -webkit-animation: 0.5s ease-in forwards fadein;
     animation: 0.5s ease-in forwards fadein;
     opacity: 1;
+
+    @include min-media-query($on-tablet) {
+      position: relative;
+      right: 25%;
+    }
   }
 
   .author-name {
-    position: absolute;
-    left: 50%;
-    bottom: 75%;
     font-size: 1.7em;
     margin-bottom: 2px;
+
+    @include min-media-query($on-tablet) {
+      font-size: 2.0em;
+      position: absolute;
+      left: 50%;
+      bottom: 70%;
+    }
   }
 
   .author-bio {
     margin: 0 auto;
     opacity: 0.9;
-    position: absolute;
-    left: 50%;
-    bottom: 70%;
     max-width: 393px;
     line-height: 1.688;
+
+    @include min-media-query($on-tablet) {
+      font-size: 1.2em;
+      position: absolute;
+      left: 50%;
+      bottom: 65%;
+    }
   }
 }
 
@@ -281,12 +302,14 @@
   @include media-query($on-mobile) {
     margin-top: 3em;
   }
+
   span.footer_item {
     color: $black;
     opacity: 0.8;
     font-weight: $bold-weight;
     font-size: $small-font-size;
   }
+
   a.footer_item {
     color: $black;
     opacity: 0.8;
@@ -294,6 +317,7 @@
 
     &:not(:last-child) {
       margin-right: 10px;
+
       &:hover {
         opacity: 1;
       }
@@ -315,6 +339,7 @@
   justify-content: center;
   flex-direction: column;
   height: 75vh;
+
   .title {
     font-size: 5em;
     font-weight: $bold-weight;
@@ -322,13 +347,16 @@
     color: $black;
     text-shadow: 1px 0px 0px $text-link-blue;
   }
+
   .phrase {
     color: $text-base-color;
   }
+
   .solution {
     color: $text-link-blue;
     letter-spacing: 0.5px;
   }
+
   .solution:hover {
     color: $text-link-blue-active;
   }
@@ -360,9 +388,11 @@
     font-size: $base-font-size;
     background-color: rgba(128, 128, 128, 0.1);
     border: 1px solid rgba(128, 128, 128, 0.1);
+
     &::-webkit-input-placeholder {
       color: #808080;
     }
+
     &::-webkit-search-decoration,
     &::-webkit-search-results-decoration {
       display: none;
@@ -372,6 +402,7 @@
 
 #search-results {
   text-align: center;
+
   li {
     text-align: left;
   }
@@ -379,6 +410,7 @@
 
 .archive-tags {
   height: auto;
+
   .tag-item {
     padding: 1px 3px;
     border-radius: 2px;

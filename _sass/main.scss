@@ -54,6 +54,12 @@ $on-widescreen: 1152px;
   }
 }
 
+@mixin min-media-query($device) {
+  @media screen and (min-width: $device) {
+    @content;
+  }
+}
+
 @mixin relative-font-size($ratio) {
   font-size: $base-font-size * $ratio;
 }
