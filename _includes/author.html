@@ -1,7 +1,13 @@
 <div class="author">
   <img class="author-avatar" src="{{ site.author.avatar }}" alt="{{ site.author.username }}" />
-  <h2 class="author-name">{{ site.author.name }}</h2>
-  <p class="author-bio">{{ site.author.bio }}
-  </p>
+  <div class="author-bio-wrapper">
+    <h2 class="author-name">{{ site.author.name }}</h2>
+    <p class="author-bio">
+      <a href="{{ site.author.linkedin }}" target="_blank"> <i class="fa fa-lg fa-linkedin"></i></a> &emsp;
+      <a href="{{ site.author.github }}" target="_blank"><i class="fa fa-lg fa-github"></i></a> &emsp;
+      <a href="mailto://{{ site.author.email }}" target="_blank"><i class="fa fa-lg fa-envelope"></i></a> &emsp;
+      <a href="assets/SSJ_Resume_2022.pdf" target="_blank"><i class="fa fa-lg fa-address-card"></i></a>
+    </p>
+  </div>
 
 </div>

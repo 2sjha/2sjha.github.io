@@ -1,5 +1,5 @@
 # Site settings
-title: Shubham Shekhar Jha # site title
+title: Shubham S Jha # site title
 description: >- # site description
   Personal Website of Shubham Shekhar Jha
 lang: en-US # default lang
@@ -11,9 +11,9 @@ mode: dark # default theme "dark" | "light"
 # Profile settings
 author:
   name: Shubham Shekhar Jha # author name
-  bio: I know I do not know enough.
   username: 2sjha # general username
-  github: 2sjha # github username
+  linkedin: https://www.linkedin.com/in/shubhamshekharjha/
+  github: https://github.com/2sjha
   email: jhashubhamshekhar@gmail.com # email adress
   avatar: /assets/img/avatar.jpg # change with your own avatar
 
