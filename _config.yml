@@ -1,11 +1,11 @@
 # Site settings
 title: Shubham S Jha # site title
 description: >- # site description
-  Personal Website of Shubham Shekhar Jha
+  Personal Website of Shubham S Jha
 lang: en-US # default lang
 timezone: America/Chicago # set your timezone
 image: assets/img/ogp.png # This image used for Open Graph more info https://ogp.me/
-repo: https://github.com/2sjha/2sjha.github.io # site repo [optional]
+repo: https://www.github.com/2sjha/2sjha.github.io # site repo [optional]
 mode: dark # default theme "dark" | "light"
 
 # Profile settings
