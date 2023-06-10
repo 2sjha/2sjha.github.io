@@ -262,6 +262,7 @@ DEPENDENCIES
   jekyll-compose (~> 0.12.0)
   jekyll-feed (~> 0.13)
   jekyll-sitemap (~> 1.4)
+  tzinfo-data
   webrick (~> 1.7)
 
 BUNDLED WITH
